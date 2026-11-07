@@ -1,19 +1,20 @@
-# Jenkins LTS 中文升级指南
+# Jenkins LTS upgrade guides · Jenkins LTS 升级指南
 
-每出一个 Jenkins LTS 版本，我在这里写一份中文升级指南：官方升级指南和更新日志里跟升级有关的内容，加上我对 38 个老版本逐个实测的结果，告诉你**从你现在的版本**升过来会怎样、该怎么走。
+One guide per Jenkins LTS release, written by starting version: **what happens when you upgrade from the version you run today**, with rehearsal results for 38 LTS lines. In English and Simplified Chinese.
 
-为什么做这个：Jenkins 官方的中文站（jenkins.io/zh）从 2020 年起就没再更新过，安装页还写着 Java 8 就行。英文升级指南是按"这个版本改了什么"写的，没写"从你那个版本升过来会怎样"。
+每出一个 Jenkins LTS，写一份升级指南：**从你现在的版本升过来会怎样**，附 38 个 LTS 版本的实测结果。中英双语。
 
-| LTS | 发布日期 | 指南 | 要点 |
-|---|---|---|---|
-| 2.580.x | 2026-09-30 / 10-28 | [2.580.md](2.580.md) | 必须 Java 21+；2.355 及更早直接升可能起不来；2.580.2 修了 15 个漏洞 |
+📖 https://shenxianpeng.github.io/jenkins-lts/ · [简体中文](https://shenxianpeng.github.io/jenkins-lts/zh/)
 
-## 写法
+| LTS | Guide |
+| --- | --- |
+| 2.580.x | [English](docs/2-580.md) · [中文](docs/2-580.zh.md) |
 
-- 内容来自官方英文资料，AI 起草，我逐条核对原文。和官方说法不一致的地方会单独标出来，并写明依据。
-- 实测数据来自 [jenkins-upgrade-check](https://github.com/keelinfra/jenkins-upgrade-check) 的升级矩阵，每周自动跑一次。
-- 发现错误或者你升级时踩了别的坑，欢迎提 issue 或 PR。
+Built with [MkDocs NG](https://mkdocs-ng.org/) and the [Sumi](https://sumi.mkdocs-ng.org/) theme.
 
-## 许可
+```sh
+pip install -r requirements.txt
+mkdocs serve
+```
 
-文字内容使用 [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans)，和 jenkins.io 的内容许可一致。
+Text is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), the same as jenkins.io.
